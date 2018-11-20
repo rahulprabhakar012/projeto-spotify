@@ -1,0 +1,40 @@
+/*
+*
+* @author Washington Júnior
+* @version 0.1
+*/
+
+/* ********** PALETA DE CORES **********
+
+- Preto: #000000; rgb(0,0,0);
+- Branco: #ffffff; rgb(255,255,255);
+- Azul: #9bf0e1; rgb(155,240,225);
+
+*/
+
+/* ********** NAVIGATION BAR ********** */
+
+.bg-transparent-black {
+  background-color: rgba(0,0,0,0.6);
+  padding: 15px 0px;
+}
+
+.img-brand {
+  width: 141.75px; /* 25% do width original da imagem */
+  height: 42.75px; /* 25% do height original da imagem */
+}
+
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active:hover {
+  color: #9bf0e1;
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background-color: #ffffff;
+  margin: 10px;
+}

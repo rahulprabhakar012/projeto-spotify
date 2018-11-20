@@ -13,6 +13,7 @@ var imgFiles = [
   './public/assets/img/**/*.jpg',
   './public/assets/img/**/*.gif',
   './public/assets/img/**/*.png',
+  './public/assets/img/**/*.svg',
   '!./public/assets/img/originals/**/*'
 ];
 var videoFiles = ['./public/assets/video/**/*.mp4'];
@@ -45,12 +46,6 @@ gulp.task('vendor', function() {
     '!./node_modules/jquery/dist/core.js'
   ])
   .pipe(gulp.dest('./vendor/jquery'))
-
-  // jQuery Easing
-  gulp.src([
-    './node_modules/jquery.easing/*.js'
-  ])
-  .pipe(gulp.dest('./vendor/jquery-easing'))
 
 });
 

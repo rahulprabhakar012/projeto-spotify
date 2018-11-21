@@ -1,6 +1,6 @@
 # projeto-spotify
 
-This repository contains the resources and source code of the spotify website.
+This repository contains the resources and source code of the Spotify website.
 
 ## Preview
 

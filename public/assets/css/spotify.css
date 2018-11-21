@@ -4,20 +4,15 @@
 * @version 0.1
 */
 
-/* ********** PALETA DE CORES **********
-
-- Preto: #000000; rgb(0,0,0);
-- Branco: #ffffff; rgb(255,255,255);
-- Azul: #9bf0e1; rgb(155,240,225);
-
-*/
-
 /* ********** NAVIGATION BAR ********** */
+
+nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 .bg-transparent-black {
   background-color: rgba(0,0,0,0.6);
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .img-brand {
@@ -61,13 +56,15 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  /* Full height */
+  min-height: 100%;
+}
+
 .bg-image {
 
   /* The image used */
   background: url("../img/header/capas-albuns-cds-musica.png"), url("../img/header/ruido.png"), linear-gradient(50deg, #ff4169, #7c26f8);
-
-  /* Full height */
-  min-height: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -212,4 +209,34 @@ h3 {
   -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
   -moz-transform: rotate(30deg); /* Firefox */
   padding-left: 80px;
+}
+
+/* ********** FOOTER ********** */
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+footer h4 {
+  color: #919496;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+footer .nav .nav-link, footer .nav .nav-link:focus {
+  color: #ffffff;
+}
+
+footer .nav .nav-link:hover, footer .nav .nav-link.active:hover {
+  color: #9bf0e1;
+}
+
+.list-social {
+  padding-right: 20px;
 }

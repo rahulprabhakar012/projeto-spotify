@@ -30,16 +30,6 @@ gulp.task('vendor', function() {
   ])
   .pipe(gulp.dest('./vendor/bootstrap'))
 
-  // Font Awesome
-  gulp.src([
-    './node_modules/@fortawesome/fontawesome-free/**/*',
-    '!./node_modules/@fortawesome/fontawesome-free/{less,less/*}',
-    '!./node_modules/@fortawesome/fontawesome-free/{scss,scss/*}',
-    '!./node_modules/@fortawesome/fontawesome-free/.*',
-    '!./node_modules/@fortawesome/fontawesome-free/*.{txt,json,md}'
-  ])
-  .pipe(gulp.dest('./vendor/@fortawesome/fontawesome-free'))
-
   // jQuery
   gulp.src([
     './node_modules/jquery/dist/*',

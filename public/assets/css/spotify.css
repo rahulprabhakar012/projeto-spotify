@@ -51,10 +51,14 @@
 
 html, body {
   height: 100%;
+  overflow: auto;
 }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+
+  /* hide the horizontal bar */
+  overflow-x: hidden;
 }
 
 .bg-image {
@@ -98,7 +102,7 @@ body {
 .bg-text h1 {
   font-weight: 900;
   margin-bottom: 50px;
-  /* espaçamento entre as letras: <valor-negativo> diminui o espaçamento ; <valor-positivo> aumenta o espaçamento */
+  /* spacing between letters: <negative-value> decreases spacing; <positive-value> increases spacing */
   letter-spacing: -0.05em;
 }
 
@@ -161,4 +165,51 @@ body {
 .bg-text .btn-outline:hover {
   background-color: #ffffff;
   color: #000000;
+}
+
+/* ********** SERVICES ********** */
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#services img {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+#services h2, #services h3 {
+  color: #7c25f8;
+}
+
+/* ********** RESOURCES ********** */
+
+#resources h2, #resources p {
+  color: #ffffff;
+}
+
+#resources h3 {
+  color: #9bf0e1;
+}
+
+.rotate {
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate(30deg); /* Firefox */
+  padding-left: 80px;
 }

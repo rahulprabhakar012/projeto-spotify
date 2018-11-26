@@ -4,6 +4,19 @@
 * @version 0.1
 */
 
+/* ********** PALETA DE CORES **********
+
+- Preto: #000000; rgb(0,0,0)
+- Branco: #ffffff; rgb(255,255,255)
+- Azul: #9bf0e1; rgb(155,240,225)
+        #7c26f8; rgb(124,38,248)
+        #7c25f8; rgb(124,37,248)
+        #6207e3; rgb(98,7,227)
+- Vermelho: #ff4169; rgb(255,65,105)
+- Cinza: #919496; rgb(145,148,150)
+
+*/
+
 /* ********** NAVIGATION BAR ********** */
 
 nav {
@@ -20,18 +33,23 @@ nav {
   height: 42.75px; /* 25% do height original da imagem */
 }
 
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus {
-  color: #ffffff;
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus,
+footer .nav .nav-link, footer .nav .nav-link:focus,
+footer a, footer a:focus {
+  color: #fff;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active:hover {
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active:hover,
+footer .nav .nav-link:hover, footer .nav .nav-link.active:hover,
+footer a:hover, footer a.active:hover {
   color: #9bf0e1;
+  text-decoration: none;
 }
 
 .divider {
   width: 1px;
   height: 16px;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -66,8 +84,8 @@ header {
   /* The image used */
   background: url("../img/header/capas-albuns-cds-musica.png"), url("../img/header/ruido.png"), linear-gradient(50deg, #ff4169, #7c26f8);
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+  background-attachment: scroll;
 
   /* Position the image nicely */
   background-position: left top;
@@ -78,10 +96,10 @@ header {
   position: relative;
 }
 
-/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-device-width: 992px) {
+/* Create the parallax scrolling effect */
+@media only screen and (min-device-width: 992px) {
   .bg-image {
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 }
 
@@ -92,7 +110,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffffff;
+  color: #fff;
   width: 100%;
 }
 
@@ -132,7 +150,7 @@ header {
 }
 
 .bg-text .btn-custom {
-  color: #ffffff;
+  color: #fff;
   border-radius: 500px;
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -156,15 +174,15 @@ header {
 }
 
 .bg-text .btn-outline {
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
 }
 
 .bg-text .btn-outline:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #fff;
+  color: #000;
 }
 
-/* ********** SERVICES ********** */
+/* ********** SERVICES SECTION ********** */
 
 section {
   padding-top: 20px;
@@ -193,10 +211,10 @@ h3 {
   color: #7c25f8;
 }
 
-/* ********** RESOURCES ********** */
+/* ********** RESOURCES SECTION ********** */
 
 #resources h2, #resources p {
-  color: #ffffff;
+  color: #fff;
 }
 
 #resources h3 {
@@ -220,21 +238,13 @@ footer {
 }
 
 .bg-black {
-  background-color: #000000;
+  background-color: #000;
 }
 
 footer h4 {
   color: #919496;
   font-size: 12px;
   text-transform: uppercase;
-}
-
-footer .nav .nav-link, footer .nav .nav-link:focus {
-  color: #ffffff;
-}
-
-footer .nav .nav-link:hover, footer .nav .nav-link.active:hover {
-  color: #9bf0e1;
 }
 
 .list-social {
